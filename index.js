@@ -6,6 +6,10 @@ app.get('/', (req, res)=>{
     res.send('Hello, I can code with node.js')
 })
 
+app.get('/users', (req, res)=>{
+    res.send('Hello from users')
+})
+
 app.listen(port, () => {
-    console.log('Listening to Practice Port');
+    console.log('Listening to Practice Port', port);
 })
