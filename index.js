@@ -46,6 +46,11 @@ app.get('/user/:id', (req, res)=> {
     res.send(user)
 })
 
+app.post('/user', (req, res)=>{
+    console.log('request', req.body);
+    res.send('Post Succeed')
+})
+
 app.listen(port, () => {
     console.log('Listening to Practice Port', port);
 })
